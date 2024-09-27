@@ -1,11 +1,12 @@
 {
   "name": "blog-api",
   "version": "1.0.0",
+  "type": "module",
   "description": "Project 1/20 in [this backend roadmap](https://roadmap.sh/backend/project-ideas) - a personal blog API!",
   "main": "index.js",
   "scripts": {
 	  "build": "tsc -p tsconfig.json",
-	  "start": "node index.js",
+	  "start": "node dist/index.js"
   },
   "keywords": [],
   "author": "",
