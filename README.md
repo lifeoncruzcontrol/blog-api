@@ -5,7 +5,7 @@ Project 1/20 in [this backend roadmap](https://roadmap.sh/backend/project-ideas)
 ## Goals:
 - I'd like to learn some new technologies.
 - For backend: [Fastify](https://fastify.dev/), [Redis](https://redis.io/) for caching
-- Deployment: https://render.com/
+- Deployment: https://render.com/ (if I add a frontend component)
 - I do not think this app will require load balancing, but in a future project, I'd like to try working with pm2
 
 ## How to use:
