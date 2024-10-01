@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+	  "rootDir": "./src",
+	  "outDir" :"./jscompiled",
+	  "module": "ESNext",
+	  "target": "ESNext",                                  
+	  "esModuleInterop": true,  
+	  "strict": true,                                      
+	  "skipLibCheck": true,
+	  "moduleResolution": "node"
+  },
+  "include": ["./src/**/*"],
+  "exclude": ["node_modules", "**/*.spec.ts"]
+}
