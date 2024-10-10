@@ -25,4 +25,14 @@ Project 1/20 in [this backend roadmap](https://roadmap.sh/backend/project-ideas)
 
 Substitute <some_value> with whatever values you would like.
 
-- Run `docker-compose up --build`
+- In a terminal, run `docker build -t blog-api .`. This builds the container
+- In a separate terminal, run `docker run -p 8080:8080 blog-api`
+- Now, if you navigate to `localhost:8080` in your browser, you should see the API response
+
+## Stop container:
+- Run `docker ps` to see currently running containers
+- Get the docker process ID for blog-api
+- Run `docker stop <id>` to stop the container
+
+### Eventually:
+- Once I've setup docker-compose.yml, should only need to run `docker-compose up --build`
