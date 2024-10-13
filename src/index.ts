@@ -1,15 +1,20 @@
-import fastify from 'fastify';
+import Fastify from 'fastify';
 
-const server = fastify();
-
-server.get('/', async(req, rep) => {
-	return 'Hello world';
+const fastify = Fastify({
+	logger: true
 });
 
-server.listen({ port: 8080, host: '0.0.0.0' }, (err, address) => {
-	if (err) {
-		console.error(err);
+fastify.get('/', async (req, res) => {
+	res.send({'Hello world'});
+});
+
+const start = async () => {
+	try {
+		await fastify.listen({ port: 3000 });
+	} catch (err) {
+		fastify.log.error(err);
 		process.exit(1);
 	}
-	console.log(`Server listening at ${address}`);
-});
+};
+
+start();
