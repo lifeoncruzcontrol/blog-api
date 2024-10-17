@@ -1,7 +1,12 @@
 import Fastify from 'fastify';
+import fastifyPostgres from '@fastify/postgres';
 
 const fastify = Fastify({
 	logger: true
+});
+
+fastify.register(fastifyPostgres, {
+	connectionString: 'postgres://postgres@localhost/postgres'
 });
 
 fastify.get('/', async (req, res) => {
